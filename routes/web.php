@@ -31,5 +31,10 @@ Route::middleware('admin')->group(function(){
 
 });
 
+Route::get('/studio', function () {
+    return view('frontend.photographie.daemonstudio');
+});
+
+
 
 
