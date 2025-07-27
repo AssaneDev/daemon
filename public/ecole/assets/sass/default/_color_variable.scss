@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+1. Basic Color Variable
+----------------------------------------------------------------*/
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+$white: #ffffff;
+$black: #131313;
+$solid-black: #000006;
+
+$primary: #7546ff;
+$primary-100: #477ee9;
+$primary-200: #214ee6;
+$primary-300: #2f2158;
+$primary-500: #f8f6ff;
+
+$secondary: #ffd6b3;
+$secondary-emphasis: #16213d;
+
+// Borders
+$border: $white;
+$border-emphasis: $primary;
+
+// Typography
+$body-font: "DM Sans", sans-serif;
+$heading-font: "Bricolage Grotesque", sans-serif;
+$body-color: #d4d4d4;
+$light-bg-body-color: #303030;
+$body-bg-color: #111111;
+$heading-color: $white;
+
+// _root.scss
+:root {
+  --white-color: #{$white};
+  --black-color: #{$black};
+  --primary-color: #{$primary};
+  --primary-100: #{$primary-100};
+  --primary-200: #{$primary-200};
+  --primary-300: #{$primary-300};
+  --primary-500: #{$primary-500};
+  --secondary-color: #{$secondary};
+  --secondary-emphasis-color: #{$secondary-emphasis};
+
+  --border-color: #{$border};
+  --border-emphasis-color: #{$border-emphasis};
+
+  --body-color: #{$body-color};
+  --heading-color: #{$heading-color};
+  --light-bg-body-color: #{$light-bg-body-color};
+  --body-bg-color: #{$body-bg-color};
+
+  --body-font-family: #{$body-font};
+  --heading-font-family: #{$heading-font};
+}

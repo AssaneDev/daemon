@@ -1,0 +1,77 @@
+/* 
+|......................................................................
+| Template Name: Daevnt
+| Author: Thememarch
+| Version: 1.0.0
+|--------------------------------------------------------------------------
+|--------------------------------------------------------------------------
+| TABLE OF CONTENTS:
+|--------------------------------------------------------------------------
+| 1. Basic Color Variable
+| 2. Typography
+| 3. Spacing
+| 4. General
+| 5. Slider
+| 6. Video Popup
+| 7. Header
+| 8. Footer
+| 9. Pagination
+| 10. Common Page Title
+| 11. Button
+| 12. Service Card
+| 13. Hero
+| 14. Service
+| 15. Funfact
+| 16. Testimonal
+| 17. Team
+| 18. Pricing Card
+| 19. Blog
+| 20. Cta
+| 21. Choose Us Contain
+| 22. Accordion
+| 23. Tab
+| 24. Contact
+| 25. Error Comming Card
+| 26. Sticky Content
+| 27. gallery
+| 28. Event
+| 29. Feature
+| 30. Speakers
+| 31. Moving
+| 32. About
+| 33. Counterdown
+| 34. Up Comming
+ ................................................................*/
+
+@use "default/color_variable";
+@use "default/typography";
+@use "common/spacing";
+@use "common/general";
+@use "common/slider";
+@use "common/video-modal";
+@use "common/header";
+@use "common/footer";
+@use "shortcode/common-page-title";
+@use "shortcode/button";
+@use "shortcode/service-card";
+@use "shortcode/hero";
+@use "shortcode/service";
+@use "shortcode/funfact";
+@use "shortcode/testimonal";
+@use "shortcode/team";
+@use "shortcode/pricing-card";
+@use "shortcode/blog";
+@use "shortcode/cta";
+@use "shortcode/choose-us-contain";
+@use "shortcode/accordion";
+@use "shortcode/tab";
+@use "shortcode/contact";
+@use "shortcode/error-comming-card";
+@use "shortcode/gallery";
+@use "shortcode/event";
+@use "shortcode/feature";
+@use "shortcode/speakers";
+@use "shortcode/moving";
+@use "shortcode/about";
+@use "shortcode/counterdown";
+@use "shortcode/up-comming";

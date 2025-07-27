@@ -37,4 +37,10 @@ Route::get('/studio', function () {
 
 
 
+Route::get('/ecole/digital', [App\Http\Controllers\EcoleController::class, 'IndexEcole'])->name('ecole.index');
+Route::get('/form', [App\Http\Controllers\EcoleController::class, 'Form'])->name('ecole.form');
+use App\Http\Controllers\ContactController;
+
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+
 
