@@ -854,7 +854,8 @@
           </p>
           <div class="tm-height-50 tm-height-lg-30"></div>
         </div>
-        <form id="contactForm" method="post" action="#">
+       <form id="contactForm" method="POST" action="{{ route('contact.submit') }}">
+    @csrf
           <div class="form-inputs">
             <div class="type_1">
               <input type="text" name="prenom" id="firstname" class="csame" placeholder="Prénom *" required />

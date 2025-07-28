@@ -57,7 +57,8 @@
         <!-- Formulaire ici -->
         <div id="form-placeholder"></div>
         <!-- Formulaire -->
-        <form id="multiStepForm">
+        <form id="multiStepForm" action="{{ route('brief.submit') }}" method="POST" >
+            @csrf
             <div class="step" id="step-1">
                 <div class="mb-4">
                     <label class="block text-gray-700">Nom de l’établissement *</label>

@@ -22,11 +22,21 @@ class ContactController extends Controller
         'message' => 'nullable|string',
     ]);
 
-    $contact = Contact::create($validated);
+   $contact = Contact::create($validated);
 
     Mail::to(config('mail.admin_address'))->send(new ContactRequestMail($contact));
     Mail::to($contact->email)->send(new ContactRequestMail($contact));
 
-    return back()->with('success', 'Votre demande a bien été envoyée !');
+    return redirect()->route('contact.merci')->with('contact_data', $contact);
+}
+    public function merci(Request $request)
+{
+    $data = session('contact_data');
+
+    if (!$data) {
+        return redirect()->route('ecole.index');
+    }
+
+    return view('school.merci', compact('data'));
 }
 }

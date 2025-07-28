@@ -14,4 +14,7 @@ class EcoleController extends Controller
     public function Form(){
         return(view('school.form_ecole'));
     }
+
+
+
 }
