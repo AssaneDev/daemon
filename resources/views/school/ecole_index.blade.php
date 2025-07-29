@@ -703,7 +703,7 @@
           <!-- Membre 5 -->
           <div class="speakers-card">
             <div class="speakers-top__img">
-              <img src=" {{asset('ecole/assets/img/speaker/speaker-6.png')}} " alt="Assane" />
+              <img src=" {{asset('ecole/assets/img/speaker/assane.png')}} " alt="Assane" />
               <div class="speakers-main__button-content">
                 <div class="speakers-top__img__social">
                   <a href="https://www.facebook.com/" class="icon"><i class="flaticon-facebook"></i></a>
@@ -721,7 +721,7 @@
           <!-- Membre 6 -->
           <div class="speakers-card">
             <div class="speakers-top__img">
-              <img src=" {{asset('ecole/assets/img/speaker/speaker-5.png')}} " alt="Ndama" />
+              <img src=" {{asset('ecole/assets/img/speaker/ndama.png')}} " alt="Ndama" />
               <div class="speakers-main__button-content">
                 <div class="speakers-top__img__social">
                   <a href="https://www.facebook.com/" class="icon"><i class="flaticon-facebook"></i></a>
