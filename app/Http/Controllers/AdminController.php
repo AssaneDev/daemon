@@ -45,4 +45,5 @@ class AdminController extends Controller
     return redirect()->route('admin.login')->with('success','Vous etes deconnecter');
  }
  //end
+ 
 }
