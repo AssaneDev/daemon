@@ -954,6 +954,16 @@
                 return;
             }
             
+            // ✅ BLOQUER LE BOUTON SUBMIT
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = submitBtn.textContent;
+            
+            // Désactiver le bouton et changer le texte
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ Envoi en cours...';
+            submitBtn.style.opacity = '0.6';
+            submitBtn.style.cursor = 'not-allowed';
+            
             // Collecter toutes les données du formulaire
             const formData = new FormData(this);
             const data = {};
@@ -982,6 +992,11 @@
             
             if (!csrfToken) {
                 alert('Erreur: Token CSRF manquant. Veuillez recharger la page.');
+                // ✅ RÉACTIVER LE BOUTON EN CAS D'ERREUR
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+                submitBtn.style.opacity = '1';
+                submitBtn.style.cursor = 'pointer';
                 return;
             }
             
@@ -1005,17 +1020,33 @@
             .then(result => {
                 console.log('Succès:', result);
                 if (result.success) {
-                    // Afficher le message de confirmation seulement si l'envoi réussit
-                    currentStep = totalSteps + 1;
-                    updateProgress();
-                    updateStepIndicator();
-                    showStep(currentStep);
+                    // ✅ SUCCÈS: Changer le texte du bouton
+                    submitBtn.textContent = '✅ Envoyé avec succès !';
+                    submitBtn.style.background = 'linear-gradient(45deg, #27ae60, #2ecc71)';
+                    
+                    // Afficher le message de confirmation après 1 seconde
+                    setTimeout(() => {
+                        currentStep = totalSteps + 1;
+                        updateProgress();
+                        updateStepIndicator();
+                        showStep(currentStep);
+                    }, 1000);
                 } else {
+                    // ✅ ERREUR: Réactiver le bouton
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.cursor = 'pointer';
                     alert('Erreur: ' + (result.message || 'Erreur inconnue'));
                 }
             })
             .catch(error => {
                 console.error('Erreur complète:', error);
+                // ✅ ERREUR: Réactiver le bouton
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+                submitBtn.style.opacity = '1';
+                submitBtn.style.cursor = 'pointer';
                 alert('Erreur lors de l\'envoi: ' + error.message);
             });
         });
