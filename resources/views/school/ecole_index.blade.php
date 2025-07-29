@@ -632,7 +632,7 @@
           <!-- Membre 1 -->
           <div class="speakers-card">
             <div class="speakers-top__img">
-              <img src="assets/img/speaker/speaker-2.png" alt="Dady" />
+              <img src=" {{asset('ecole/assets/img/speaker/speaker-2.png')}} " alt="Dady" />
               <div class="speakers-main__button-content">
                 <div class="speakers-top__img__social">
                   <a href="https://www.facebook.com/" class="icon"><i class="flaticon-facebook"></i></a>
@@ -641,7 +641,7 @@
                 </div>
               </div>
             </div>
-            <a href="speaker-details.html" class="speakers-card__info">
+            <a href="#" class="speakers-card__info">
               <h6 class="speakers-card__title text-dot-left">Dady</h6>
               <p class="speakers-card__subtitle">Community Manager & Créateur de contenu</p>
             </a>
@@ -650,7 +650,7 @@
           <!-- Membre 2 -->
           <div class="speakers-card">
             <div class="speakers-top__img">
-              <img src="assets/img/speaker/speaker-1.png" alt="Coumba Ba" />
+              <img src=" {{asset('ecole/assets/img/speaker/speaker-1.png')}} " alt="Coumba Ba" />
               <div class="speakers-main__button-content">
                 <div class="speakers-top__img__social">
                   <a href="https://www.facebook.com/" class="icon"><i class="flaticon-facebook"></i></a>
@@ -658,7 +658,7 @@
                 </div>
               </div>
             </div>
-            <a href="speaker-details.html" class="speakers-card__info">
+            <a href="#" class="speakers-card__info">
               <h6 class="speakers-card__title text-dot-left">Coumba Ba</h6>
               <p class="speakers-card__subtitle">Développeuse</p>
             </a>
@@ -667,7 +667,7 @@
           <!-- Membre 3 -->
           <div class="speakers-card">
             <div class="speakers-top__img">
-              <img src="assets/img/speaker/speaker-3.png" alt="Khady Sow" />
+              <img src=" {{asset('ecole/assets/img/speaker/speaker-3.png')}} " alt="Khady Sow" />
               <div class="speakers-main__button-content">
                 <div class="speakers-top__img__social">
                   <a href="https://www.facebook.com/" class="icon"><i class="flaticon-facebook"></i></a>
@@ -676,7 +676,7 @@
                 </div>
               </div>
             </div>
-            <a href="speaker-details.html" class="speakers-card__info">
+            <a href="#" class="speakers-card__info">
               <h6 class="speakers-card__title text-dot-left">Khady Sow</h6>
               <p class="speakers-card__subtitle">Graphiste</p>
             </a>
@@ -685,7 +685,7 @@
           <!-- Membre 4 -->
           <div class="speakers-card">
             <div class="speakers-top__img">
-              <img src="assets/img/speaker/speaker-4.png" alt="Awa" />
+              <img src=" {{asset('ecole/assets/img/speaker/speaker-4.png')}} " alt="Awa" />
               <div class="speakers-main__button-content">
                 <div class="speakers-top__img__social">
                   <a href="https://www.facebook.com/" class="icon"><i class="flaticon-facebook"></i></a>
@@ -703,7 +703,7 @@
           <!-- Membre 5 -->
           <div class="speakers-card">
             <div class="speakers-top__img">
-              <img src="assets/img/speaker/speaker-6.png" alt="Assane" />
+              <img src=" {{asset('ecole/assets/img/speaker/speaker-6.png')}} " alt="Assane" />
               <div class="speakers-main__button-content">
                 <div class="speakers-top__img__social">
                   <a href="https://www.facebook.com/" class="icon"><i class="flaticon-facebook"></i></a>
@@ -712,7 +712,7 @@
                 </div>
               </div>
             </div>
-            <a href="speaker-details.html" class="speakers-card__info">
+            <a href="#" class="speakers-card__info">
               <h6 class="speakers-card__title text-dot-left">Assane</h6>
               <p class="speakers-card__subtitle">Developpeur</p>
             </a>
@@ -721,7 +721,7 @@
           <!-- Membre 6 -->
           <div class="speakers-card">
             <div class="speakers-top__img">
-              <img src="assets/img/speaker/speaker-5.png" alt="Ndama" />
+              <img src=" {{asset('ecole/assets/img/speaker/speaker-5.png')}} " alt="Ndama" />
               <div class="speakers-main__button-content">
                 <div class="speakers-top__img__social">
                   <a href="https://www.facebook.com/" class="icon"><i class="flaticon-facebook"></i></a>
@@ -730,7 +730,7 @@
                 </div>
               </div>
             </div>
-            <a href="speaker-details.html" class="speakers-card__info">
+            <a href="#" class="speakers-card__info">
               <h6 class="speakers-card__title text-dot-left">Aicha</h6>
               <p class="speakers-card__subtitle">Graphiste</p>
             </a>
