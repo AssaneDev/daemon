@@ -509,7 +509,7 @@
   <!-- End Pricing -->
 
   <!-- Start Testimonal -->
-  <div id="temoignages" class="tm-height-150 tm-height-lg-80"></div>
+  {{-- <div id="temoignages" class="tm-height-150 tm-height-lg-80"></div>
   <section>
     <div class="container">
       <div class="common-section-heading">
@@ -597,7 +597,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!-- End Testimonal -->
 
   <!-- Start Future Events -->
@@ -696,7 +696,7 @@
             </div>
             <a href="speaker-details.html" class="speakers-card__info">
               <h6 class="speakers-card__title text-dot-left">Awa</h6>
-              <p class="speakers-card__subtitle">Impression sur support</p>
+              <p class="speakers-card__subtitle">RH</p>
             </a>
           </div>
 
